@@ -131,6 +131,11 @@ func enabledStandardTabCount() -> Int {
         count += 1
     }
 
+    // Notion tab
+    if Defaults[.enableNotionFeature] {
+        count += 1
+    }
+
     return count
 }
 

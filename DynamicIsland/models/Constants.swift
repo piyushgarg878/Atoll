@@ -1278,6 +1278,11 @@ extension Defaults.Keys {
     static let useBluetoothHUD3DIcon = Key<Bool>("useBluetoothHUD3DIcon", default: true)
     static let showAirPodsListeningModeChanges = Key<Bool>("showAirPodsListeningModeChanges", default: true)
     
+    // MARK: Notion Feature
+    static let enableNotionFeature = Key<Bool>("enableNotionFeature", default: false)
+    static let notionPages = Key<[NotionPageEntry]>("notionPages", default: [])
+    static let notionRefreshInterval = Key<Double>("notionRefreshInterval", default: 300)
+
     // MARK: Stats Feature
     static let enableStatsFeature = Key<Bool>("enableStatsFeature", default: false)
     static let enableLLMUsageFeature = Key<Bool>("enableLLMUsageFeature", default: false)
